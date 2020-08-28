@@ -1,0 +1,6 @@
+#!name=CutCN
+#!desc=CutCN
+
+[Rule]
+RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/China.list,REJECT
+GEOIP,CN,REJECT
