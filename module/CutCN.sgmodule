@@ -2,7 +2,6 @@
 #!desc=CutCN
 
 [Rule]
-# > Alibaba
 DOMAIN-SUFFIX,alibaba.com
 DOMAIN-SUFFIX,alicdn.com
 DOMAIN-SUFFIX,alikunlun.com
