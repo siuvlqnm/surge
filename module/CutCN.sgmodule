@@ -2,22 +2,5 @@
 #!desc=CutCN
 
 [Rule]
-DOMAIN-SUFFIX,alibaba.com,DIRECT
-DOMAIN-SUFFIX,alicdn.com,DIRECT
-DOMAIN-SUFFIX,alikunlun.com,DIRECT
-DOMAIN-SUFFIX,alipay.com,DIRECT
-DOMAIN-SUFFIX,amap.com,DIRECT
-DOMAIN-SUFFIX,autonavi.com,DIRECT
-DOMAIN-SUFFIX,dingtalk.com,DIRECT
-DOMAIN-SUFFIX,mxhichina.com,DIRECT
-DOMAIN-SUFFIX,soku.com,DIRECT
-DOMAIN-SUFFIX,taobao.com,DIRECT
-DOMAIN-SUFFIX,tmall.com,DIRECT
-DOMAIN-SUFFIX,tmall.hk,DIRECT
-DOMAIN-SUFFIX,ykimg.com,DIRECT
-DOMAIN-SUFFIX,youku.com,DIRECT
-DOMAIN-SUFFIX,xiami.com,DIRECT
-DOMAIN-SUFFIX,xiami.net,DIRECT
-
 RULE-SET,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/China.list,REJECT
 GEOIP,CN,REJECT
