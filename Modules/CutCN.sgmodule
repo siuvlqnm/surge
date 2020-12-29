@@ -1,0 +1,10 @@
+#!name=CutCN
+#!desc=CutCN
+
+[Proxy Group]
+FINAL,REJECT
+PROXY,REJECT
+
+[Rule]
+RULE-SET,https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/master/Rulesets/Surge/Basic/CN.list,REJECT
+GEOIP,CN,REJECT
