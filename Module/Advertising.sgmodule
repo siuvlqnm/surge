@@ -1,0 +1,11 @@
+#!name=Block Advertising
+#!desc=Block Advertising for Surge iOS
+#!system=ios
+
+[URL Rewrite]
+# D
+# -> douban - api.douban.com
+^https?:\/\/api.douban\.com\/v\d\/app_ads\/ - reject
+
+[MITM]
+hostname = %APPEND% api.douban.com
