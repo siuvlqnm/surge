@@ -2,10 +2,15 @@
 #!desc=Block Advertising for Surge iOS
 #!system=ios
 
+[Rule]
+# D
+# -> douban - erebor.douban.com
+DOMAIN-SUFFIX,erebor.douban.com,REJECT
+
 [URL Rewrite]
 # D
 # -> douban - api.douban.com
-^https?:\/\/api.douban\.com\/v\d\/app_ads\/ - reject
+^https?:\/\/api.douban\.com\/v\d\/app_ads\/ - REJECT
 
 [MITM]
 hostname = %APPEND% api.douban.com
