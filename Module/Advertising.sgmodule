@@ -12,8 +12,12 @@ URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TI
 
 [URL Rewrite]
 # D
-# -> douban - api.douban.com
+# -> Douban - api.douban.com
 ^https?:\/\/api.douban\.com\/v\d\/app_ads\/ - reject
+# T
+# -> Taobao - gw.alicdn.com,heic.alicdn.com
+^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/.+\.jpg_(9\d{2}|\d{4}) - reject
+^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4}) - reject
 
 [MITM]
-hostname = %APPEND% api.douban.com
+hostname = %APPEND% api.douban.com,gw.alicdn.com,heic.alicdn.com
