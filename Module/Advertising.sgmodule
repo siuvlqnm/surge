@@ -35,15 +35,13 @@ URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TI
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
 
 # M
-# > Meituan-Dianping - img.meituan.net,p*.meituan.net,s3plus.meituan.net,flowplus.meituan.net
-^https?:\/\/img\.meituan\.net\/(adunion|display|dpmobile|midas)\/\w+\.(gif|jpg|jpg\.webp)$ - reject
-^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) - reject
-^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg - reject
-^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp - reject
+# > Meituan-Dianping - flowplus.meituan.net
+^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture - reject
+^https?:\/\/flowplus\.meituan\.net\/v\d\/\w+\/linglong\/\d+\.(gif|jpg|mp4) - reject
 
 # Y
 # > 云闪付 - ads.95516.com
 ^https?:\/\/ads\.95516\.com - reject
 
 [MITM]
-hostname = %APPEND% api.douban.com,gw.alicdn.com,heic.alicdn.com,acs.m.taobao.com,m*.amap.com,api.m.jd.com,img.meituan.net,p*.meituan.net,s3plus.meituan.net,flowplus.meituan.net,ads.95516.com
+hostname = %APPEND% api.douban.com,gw.alicdn.com,heic.alicdn.com,acs.m.taobao.com,m*.amap.com,api.m.jd.comflowplus.meituan.net,ads.95516.com
