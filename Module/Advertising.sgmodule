@@ -18,6 +18,7 @@ DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 DOMAIN-SUFFIX,gdtimg.com,REJECT
 # > 高德地图
 DOMAIN-SUFFIX,optimus-ads.amap.com,REJECT
+DOMAIN-SUFFIX,adashx.ut.amap.com,REJECT
 # Y
 # > 云闪付
 DOMAIN-SUFFIX,ads.95516.com,REJECT
