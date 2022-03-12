@@ -47,9 +47,17 @@ URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TI
 ^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture - reject
 ^https?:\/\/flowplus\.meituan\.net\/v\d\/\w+\/linglong\/\d+\.(gif|jpg|mp4) - reject
 
+# T
+# ---(Tencent)---
+# > Tencent Game - ssl.kohsocialapp.qq.com
+^https?:\/\/ssl\.kohsocialapp\.qq\.com:\d+\/game\/buttons - reject
+^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info - reject
+# > Tencent WeChat - mp.weixin.qq.com
+# ^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement) - reject
+
 # Y
 # > 云闪付 - ads.95516.com
 ^https?:\/\/ads\.95516\.com - reject
 
 [MITM]
-hostname = %APPEND% api.douban.com,gw.alicdn.com,heic.alicdn.com,acs.m.taobao.com,m*.amap.com,api.m.jd.comflowplus.meituan.net,ads.95516.com
+hostname = %APPEND% api.douban.com,gw.alicdn.com,heic.alicdn.com,acs.m.taobao.com,m*.amap.com,api.m.jd.comflowplus.meituan.net,ssl.kohsocialapp.qq.com,qt.qq.com,mp.weixin.qq.com,ads.95516.com
