@@ -14,7 +14,11 @@ URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TI
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 # G
+# > 盖德排行
 DOMAIN-SUFFIX,gdtimg.com,REJECT
+# Y
+# > 云闪付
+DOMAIN-SUFFIX,ads.95516.com,REJECT
 
 [URL Rewrite]
 # A
@@ -65,9 +69,5 @@ DOMAIN-SUFFIX,gdtimg.com,REJECT
 # > Tencent WeChat - mp.weixin.qq.com
 # ^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement) - reject
 
-# Y
-# > 云闪付 - ads.95516.com
-^https?:\/\/ads\.95516\.com - reject
-
 [MITM]
-hostname = %APPEND% api.douban.com,zone.guiderank-app.com,gw.alicdn.com,heic.alicdn.com,acs.m.taobao.com,m*.amap.com,api.m.jd.comflowplus.meituan.net,ssl.kohsocialapp.qq.com,qt.qq.com,mp.weixin.qq.com,ads.95516.com
+hostname = %APPEND% api.douban.com,zone.guiderank-app.com,gw.alicdn.com,heic.alicdn.com,acs.m.taobao.com,m*.amap.com,api.m.jd.comflowplus.meituan.net,ssl.kohsocialapp.qq.com,qt.qq.com,mp.weixin.qq.com
