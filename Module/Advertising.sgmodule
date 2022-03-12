@@ -13,6 +13,8 @@ URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TI
 # > TouTiao - pangolin-sdk-toutiao.com,pglstatp-toutiao.com
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+# G
+DOMAIN-SUFFIX,gdtimg.com,REJECT
 
 [URL Rewrite]
 # A
@@ -41,6 +43,10 @@ DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 # > Douban - api.douban.com
 ^https?:\/\/api.douban\.com\/v\d\/app_ads\/ - reject
 
+# G
+# > 盖德排行 - zone.guiderank-app.com
+^https?:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/ad\/ - reject
+
 # J
 # > JD - api.m.jd.com
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts - reject
@@ -64,4 +70,4 @@ DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 ^https?:\/\/ads\.95516\.com - reject
 
 [MITM]
-hostname = %APPEND% api.douban.com,gw.alicdn.com,heic.alicdn.com,acs.m.taobao.com,m*.amap.com,api.m.jd.comflowplus.meituan.net,ssl.kohsocialapp.qq.com,qt.qq.com,mp.weixin.qq.com,ads.95516.com
+hostname = %APPEND% api.douban.com,zone.guiderank-app.com,gw.alicdn.com,heic.alicdn.com,acs.m.taobao.com,m*.amap.com,api.m.jd.comflowplus.meituan.net,ssl.kohsocialapp.qq.com,qt.qq.com,mp.weixin.qq.com,ads.95516.com
