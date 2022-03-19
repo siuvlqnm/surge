@@ -72,5 +72,10 @@ DOMAIN-SUFFIX,ads.95516.com,REJECT
 # > Tencent WeChat - mp.weixin.qq.com
 # ^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement) - reject
 
+# 10086
+# > 10086 - 10086.cn
+^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit - reject
+^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query - reject
+
 [MITM]
-hostname = %APPEND% api.douban.com,zone.guiderank-app.com,gw.alicdn.com,heic.alicdn.com,acs.m.taobao.com,m*.amap.com,api.m.jd.comflowplus.meituan.net,ssl.kohsocialapp.qq.com,qt.qq.com,mp.weixin.qq.com
+hostname = %APPEND% api.douban.com,zone.guiderank-app.com,gw.alicdn.com,heic.alicdn.com,acs.m.taobao.com,m*.amap.com,api.m.jd.comflowplus.meituan.net,wmapi.meituan.com,ssl.kohsocialapp.qq.com,qt.qq.com,mp.weixin.qq.com,clientaccess.10086.cn,wap.js.10086.cn
