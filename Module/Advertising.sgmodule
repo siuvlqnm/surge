@@ -63,6 +63,7 @@ DOMAIN-SUFFIX,ads.95516.com,REJECT
 # > Meituan-Dianping - flowplus.meituan.net
 ^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture - reject
 ^https?:\/\/flowplus\.meituan\.net\/v\d\/\w+\/linglong\/\d+\.(gif|jpg|mp4) - reject
+^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo - reject
 
 # T
 # ---(Tencent)---
