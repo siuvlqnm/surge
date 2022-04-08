@@ -32,5 +32,7 @@ always-real-ip = %APPEND% msftconnecttest.com, msftncsi.com, *.msftconnecttest.c
 ^https?:\/\/you\.163\.com\/ https://you.163.com/ 302
 ^https?:\/\/(www.)?suning\.com\/ https://suning.com/ 302
 
+^https?:\/\/(www.)?duolingo\.cn https://www.duolingo.com 302
+
 [MITM]
 hostname = %INSERT% www.google.cn
