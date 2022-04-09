@@ -51,8 +51,9 @@ DOMAIN-SUFFIX,ads.95516.com,REJECT
 ^https?:\/\/api.douban\.com\/v\d\/app_ads\/ - reject
 
 # G
-# > 盖德排行 - zone.guiderank-app.com
+# > 盖德排行 - zone.guiderank-app.com,video*.guiderank-app.com
 ^https?:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/ad\/ - reject
+^https?:\/\/video\d\.guiderank-app\.com\/ - reject
 
 # J
 # > JD - api.m.jd.com
@@ -79,4 +80,4 @@ DOMAIN-SUFFIX,ads.95516.com,REJECT
 ^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query - reject
 
 [MITM]
-hostname = %APPEND% api.douban.com,zone.guiderank-app.com,gw.alicdn.com,heic.alicdn.com,acs.m.taobao.com,m*.amap.com,api.m.jd.comflowplus.meituan.net,wmapi.meituan.com,ssl.kohsocialapp.qq.com,qt.qq.com,mp.weixin.qq.com,clientaccess.10086.cn,wap.js.10086.cn
+hostname = %APPEND% api.douban.com,zone.guiderank-app.com,video*.guiderank-app.com,gw.alicdn.com,heic.alicdn.com,acs.m.taobao.com,m*.amap.com,api.m.jd.comflowplus.meituan.net,wmapi.meituan.com,ssl.kohsocialapp.qq.com,qt.qq.com,mp.weixin.qq.com,clientaccess.10086.cn,wap.js.10086.cn
